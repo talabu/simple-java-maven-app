@@ -8,7 +8,7 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean package -DproxySet=true -DproxyHost=web-proxy.corp.hpecorp.net -DproxyPort=8080'
+                sh 'mvn -B -DskipTests clean package'
             }
         }
         stage('Test') {
