@@ -1,7 +1,7 @@
 pipeline {
     agent {
         docker {
-            image 'talabu/seltest'
+            image 'talabu/seltest:latest'
             args '-v /root/.m2:/root/.m2'
         }
     }
