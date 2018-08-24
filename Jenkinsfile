@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'mvn -B -DskipTests clean package'
+                sh 'echo hello in build'
             }
         }
         stage('Test') {
             steps {
-                sh 'mvn test'
+                sh 'echo hello in test'
             }
             post {
                 always {
