@@ -13,7 +13,7 @@ pipeline {
         }
         stage('Test') {
             steps {
-                sh 'mvn test -DproxySet=true -DproxyHost=web-proxy.corp.hpecorp.net -DproxyPort=8080'
+                sh 'mvn test'
             }
             post {
                 always {
